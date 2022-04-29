@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<title>My Portfolio</title>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="stomp.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https    ://fonts.googleapis.com/css2?family=Manrope:wght@600&family=Nosifer&display=swap" rel="stylesheet">
+</head>
+<script type = "text/javascript">  
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+    </script> 
+    <style>
+        .break{
+            background: rgba(rgb(75, 71, 71), rgb(75, 71, 71), rgb(75, 71, 71), 0.4);
+
+        }
+    </style> 
+<body>
+    <header>
+<div class="center">
+  <img class="center" id="img2" src="/Users/zoomy/Desktop/CODEPICS/savagepatrick-feat3-modified.png">
+<p id="bruh">Patricks Portfolio</p>
+</div>
+<nav>
+  <ul class="ul">
+      <li><a href="About Me.html">About me</a></li>
+      <li><a href="Media Appearences.html">My media appearences</a></li>
+      <li><a href="Support my career.html">Support my career</a></li>
+  </ul>
+</nav>
+    </header>
+    <BR>
+  <h2>Gallery</h2>
+  <BR>
+    <BR>
+        <BR>
+  <div class="container">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+        <img src="https://deadline.com/wp-content/uploads/2022/03/StarShow.jpg" style="width:100%;">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+        <img src="https://nypost.com/wp-content/uploads/sites/2/2020/08/spongebob-patrick-1-copy.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">3 / 4 </div>
+        <img src="https://mtv.mtvnimages.com/uri/mgid:ao:image:mtv.com:5394?height=729&width=1296&format=jpg" style="width: 100%;">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+        <img src="https://i.redd.it/s1rh4l8p0uw31.jpg" style="width: 100%">
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <div class="row">
+        <div class="column">
+            <br>
+            <br>
+            <break class="break">
+          <h1>My Gallery</h1>
+        </break>
+        </div>
+        <br>
+        <br>
+        <br>
+        
+</body>
